@@ -1,6 +1,5 @@
 # Marketplace
 
-![Java](https://img.shields.io/badge/Language-Java-red) ![POO](https://img.shields.io/badge/Concept-POO-blue) ![GitHub](https://img.shields.io/badge/Version-Control-Git-green)
 
 ## 📌 Sobre o Projeto
 **Marketplace** é um **marketplace acadêmico** desenvolvido em **Java**, criado como projeto da disciplina de **Programação Orientada a Objetos (POO)**.  
