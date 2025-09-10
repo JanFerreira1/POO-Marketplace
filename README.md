@@ -1,6 +1,6 @@
 # 🎶🔁 RePlayce  
 
-**RePlayce é um marketplace acadêmico criado no projeto de POO, voltado para entusiastas da música retrô. A plataforma conecta compradores e vendedores de discos de vinil, vitrolas, fitas K7, CDs e outros itens clássicos, promovendo não só a negociação, mas também o resgate da memória afetiva e da cultura musical de outras épocas.  
+RePlayce é um marketplace acadêmico criado no projeto de POO, voltado para entusiastas da música retrô. A plataforma conecta compradores e vendedores de discos de vinil, vitrolas, fitas K7, CDs e outros itens clássicos, promovendo não só a negociação, mas também o resgate da memória afetiva e da cultura musical de outras épocas.  
 
 ---
 
