@@ -1,46 +1,56 @@
-# Marketplace
+# 🎶🔁 RePlayce  
 
-
-## 📌 Sobre o Projeto
-**Marketplace** é um **marketplace acadêmico** desenvolvido em **Java**, criado como projeto da disciplina de **Programação Orientada a Objetos (POO)**.  
-O sistema conecta compradores e vendedores em um só lugar, permitindo o **cadastro de usuários, registro de produtos e gerenciamento de pedidos**.  
+**RePlayce é um marketplace acadêmico criado no projeto de POO, voltado para entusiastas da música retrô. A plataforma conecta compradores e vendedores de discos de vinil, vitrolas, fitas K7, CDs e outros itens clássicos, promovendo não só a negociação, mas também o resgate da memória afetiva e da cultura musical de outras épocas.  
 
 ---
 
-## 🚀 Funcionalidades
-- Cadastro e login de usuários  
-- Cadastro de produtos  
-- Listagem de produtos disponíveis  
-- Criação e gerenciamento de pedidos  
+## 🛠 Tecnologias  
+- **Java** – programação orientada a objetos  
+- **React** – desenvolvimento da interface do usuário  
+- **Git & GitHub** – versionamento e colaboração  
+- **Persistência de dados** – arquivos ou banco de dados (a definir)
 
 ---
 
-## 🛠 Tecnologias
-- **Java (POO)** – orientação a objetos aplicada em classes, objetos e métodos  
-- **Persistência de dados** – arquivos ou banco de dados (a definir)  
-- **Git & GitHub** – controle de versão e colaboração  
+## ⚡ Destaques do Projeto
+- **Experiência retrô com toque moderno**: interface em React com lógica em Java.
+- **Promoção cultural**: fomenta a troca de itens musicais clássicos entre usuários.
+- **Visão acadêmica + prática**: une conceitos de orientação a objetos com aplicação web funcional.
 
 ---
 
-## 👥 Equipe
+## 👥 Equipe  
 - Albean Santiago  
 - Deyvison Conrado  
 - Janderson Ferreira  
 - Joyce Cristine  
 - Maria Aparecida  
 - Pedro Rennil  
-- Rhaldney Roberte  
+- Rhaldney Roberte
+  
+---
+
+## 📚 Documentação 
+- https://docs.google.com/document/d/1nc70s5kqIpXVey08oF5ZoNtPvw2s-G6Sm4VDotIGi7c/edit?usp=sharing
+  
+---
+
+## 📖 Histórias de Usuário
+- https://codingthefuture.atlassian.net/jira/software/projects/CCS/boards/1?atlOrigin=eyJpIjoiMjNiM2ZiN2FjNTJlNGMzZTk1NjgzMzdkYjllNjZmMTciLCJwIjoiaiJ9
+  
+---
+
+## 🖼 Protótipo Lo-Fi  
+- https://www.figma.com/proto/P5g2d7nrqH8aSpSbrkW5IJ/Wireframe?node-id=1-2&t=n5UcUr9YYCP6OGC1-1
 
 ---
 
-## 📅 Etapas do Projeto
+## 🎥 Screencast
+👉 [Inserir link do Screencast aqui]  
+
+---
+
+## 📅 Etapas do Projeto  
 - **Kickoff (26/08 a 29/08):** definição da ideia, equipe e repositório  
-- **Próximas entregas:** desenvolvimento das funcionalidades e integração  
-
----
-
-## 📝 Como Rodar
-1. Clone o repositório:  
-   ```bash
-   git clone https://github.com/seuusuario/Marketplace.git
+- **Entrega 01 (09/09):** histórias de usuário, protótipo Lo-Fi e screencast  
 
