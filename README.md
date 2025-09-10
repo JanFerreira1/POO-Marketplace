@@ -36,7 +36,7 @@ RePlayce é um marketplace acadêmico criado no projeto de POO, voltado para ent
 ---
 
 ## 📖 Histórias de Usuário
-- https://codingthefuture.atlassian.net/jira/software/projects/CCS/boards/1?atlOrigin=eyJpIjoiMjNiM2ZiN2FjNTJlNGMzZTk1NjgzMzdkYjllNjZmMTciLCJwIjoiaiJ9
+- https://codingthefuture.atlassian.net/jira/software/projects/REP/boards/34?atlOrigin=eyJpIjoiM2M1MmQ4NjllYjk3NDRhY2FlMjVhNjc4ZTM2MjU3NDIiLCJwIjoiaiJ9
   
 ---
 
