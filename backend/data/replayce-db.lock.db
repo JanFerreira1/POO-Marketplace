@@ -1,0 +1,6 @@
+#FileLock
+#Mon Sep 29 21:09:59 BRT 2025
+hostName=192.168.2.103
+id=19997f45f9730ee5a37ccc3b03a6642593b91ed3545
+method=file
+server=192.168.2.103\:65252
