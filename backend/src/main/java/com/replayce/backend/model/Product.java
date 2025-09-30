@@ -9,7 +9,9 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false) // título é obrigatório
     private String title;
+
     private String artist;
     private Integer yearRelease;
     private String conditionState; // novo/ótimo/ruim
@@ -23,6 +25,7 @@ public class Product {
 
     public Product() {}
 
+    // Construtor completo
     public Product(String title, String artist, Integer yearRelease, String conditionState,
                    Double price, String description, String category, String imageUrl) {
         this.title = title;
