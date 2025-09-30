@@ -3,3 +3,4 @@
 *.db
 *.db
 backend/data/replayce-db.lock.db
+*.db
