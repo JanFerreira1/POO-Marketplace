@@ -1,4 +1,5 @@
-package com.replayce.model;
+package com.replayce.demo.model;
+import com.replayce.demo.model.Produto;
 
 import java.math.BigDecimal;
 import lombok.AllArgsConstructor;

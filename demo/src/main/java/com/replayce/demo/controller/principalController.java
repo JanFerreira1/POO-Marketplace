@@ -1,4 +1,4 @@
-package com.replayce.controller;
+package com.replayce.demo.controller;
 
 import org.springframework.stereotype.Controller;
 
