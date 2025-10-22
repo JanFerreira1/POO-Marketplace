@@ -64,7 +64,13 @@ https://www.youtube.com/watch?v=bmpB8KRJCHE
 
 ---
 
+## 🎥 Screencast entrega 3
+
+
+---
+
 ## 📅 Etapas do Projeto  
-- **Kickoff (26/08 a 29/08):** definição da ideia, equipe e repositório  
-- **Entrega 01 (09/09):** histórias de usuário, protótipo Lo-Fi e screencast
-- **Entrega 02 (30/09):** Ao menos 2 histórias implementadas e seu Screencast, Issue/bug tracker atualizado e commits frequentes
+- **Kickoff (26/08 a 29/08):** Definição da ideia, equipe e repositório.
+- **Entrega 01 (09/09):** Histórias de usuário, protótipo Lo-Fi e screencast.
+- **Entrega 02 (30/09):** Ao menos 2 histórias implementadas e seu Screencast, Issue/bug tracker atualizado e commits frequentes.
+- **Entrega 03 (23/10):** Mais 2 histórias para implementar e novo screencast, Issue/bug tracker atualizado testes automatizados.
