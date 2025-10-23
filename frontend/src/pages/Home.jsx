@@ -12,15 +12,22 @@ export default function Home() {
   const [allProducts, setAllProducts] = useState([])
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
-  const q = useQuery().get('q') || ''
+  const query = useQuery()
+  const q = query.get('q') || ''
+  const category = query.get('category') || ''
 
   useEffect(() => {
     setLoading(true)
-    fetch(API)
+    // Construir URL com parâmetros
+    const params = new URLSearchParams()
+    if (category) params.set('category', category)
+    const url = params.toString() ? `${API}?${params.toString()}` : API
+    
+    fetch(url)
       .then(res => res.json())
       .then(data => {
         setAllProducts(data)
-        // aplicar filtro inicial se houver query
+        // aplicar filtro de busca (q) localmente
         if (q) {
           const filtered = filterProducts(data, q)
           setProducts(filtered)
@@ -34,9 +41,9 @@ export default function Home() {
         setProducts([])
       })
       .finally(() => setLoading(false))
-  }, []) // roda só uma vez, ao montar
+  }, [category]) // recarrega quando muda categoria
 
-  // atualiza quando muda 'q' ou allProducts
+  // atualiza quando muda 'q'
   useEffect(() => {
     if (!q) { setProducts(allProducts); return }
     setProducts(filterProducts(allProducts, q))
@@ -45,7 +52,12 @@ export default function Home() {
   return (
     <div>
       <h1>Vitrolas e Discos</h1>
-      {q && <p>Resultados para: <strong>{q}</strong></p>}
+      {(q || category) && (
+        <p>
+          {category && <span>Categoria: <strong>{category}</strong> </span>}
+          {q && <span>Busca: <strong>{q}</strong></span>}
+        </p>
+      )}
       {loading ? <p>Carregando...</p> :
         products.length === 0 ? <p>Nenhum produto encontrado.</p> :
         <div className="grid">
