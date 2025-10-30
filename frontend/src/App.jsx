@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import ProductDetail from './pages/ProductDetail'
 import Header from './components/Header'
+import './App.css'; // ⬅️ GARANTA QUE ESTA LINHA EXISTA!
 
 export default function App() {
   return (

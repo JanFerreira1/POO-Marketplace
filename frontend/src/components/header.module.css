@@ -1,0 +1,59 @@
+/* Em: header.module.css */
+
+/* Estilos para a lista <ul> (o container) */
+.navbar {
+  /* Ex: centralizar e remover bolinhas da lista */
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+/* * 💡 CORREÇÃO AQUI:
+ * Isso seleciona todas as tags <a> (globais)
+ * que estão DENTRO da sua classe .navbar
+ */
+.navbar :global(a) {
+  text-decoration: none;  /* Remove o sublinhado */
+  color: inherit;         /* Remove a cor azul (faz o link herdar a cor do texto do pai) */
+  padding: 1rem;          /* Adiciona um espaçamento para ficar melhor */
+  
+}
+
+/* Recomendado: Adiciona um feedback visual ao passar o mouse */
+.navbar :global(a:hover) {
+  text-decoration: underline;
+  background-color: #555; /* Exemplo de cor de hover */
+  border-radius: 15px;
+  
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.logo :global(a) {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    height: 6rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+
+}
+
+.logo :global(a:hover) {
+   
+/* Aplica a animação 'shake' */
+  animation: shake 0.5s; 
+  /* Faz a animação rodar em loop enquanto o mouse estiver em cima */
+  animation-iteration-count: 2;
+}

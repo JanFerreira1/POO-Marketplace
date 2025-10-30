@@ -2,41 +2,150 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+/* --- ESTILOS DOS BOTÕES --- */
+
+/* Base comum para os botões */
+.btn-voltar, .botao-detalhes {
+    background-color: #000000; /* Preto */
+    color: #ffffff; /* Branco */
+    border: none;
+    border-radius: 8px; /* Cantos arredondados */
+    font-weight: 600; /* Semi-negrito */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-voltar:hover, .botao-detalhes:hover {
+    background-color: #374151; /* Cinza escuro */
+}
+
+/* 💡 CSS: Botão "Voltar" (Posição Corrigida) */
+.btn-voltar {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem; /* Espaçamento abaixo */
+    /* Removido 'float: left;' para um alinhamento limpo */
+}
+
+/* Botão "Adicionar" (maior, como no seu print) */
+.botao-detalhes {
+    padding: 12px 24px;
+    font-size: 1.125rem;
+    width: 100%; /* Ocupa a largura toda */
+}
+
+
+/* --- LAYOUT DO PRODUCT DETAIL (Substituindo o Tailwind) --- */
+
+.product-detail-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: left; /* Alinha o conteúdo (e o botão voltar) à esquerda */
+}
+
+
+/* A caixa branca com sombra */
+.product-layout-box {
+  display: flex;
+  flex-direction: column; /* Padrão (mobile) */
+  gap: 24px;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+/* Em telas maiores, fica lado-a-lado */
+@media (min-width: 768px) {
+  .product-layout-box {
+    flex-direction: row; /* vira linha */
+  }
+}
+
+/* A coluna de informações */
+.product-info-col {
+  flex: 1; /* Ocupa o espaço restante */
+}
+
+/* 💡 CSS: CSS DA IMAGEM (O seu estava correto, mas incluído aqui) */
+.imagem-detalhe {
+  height: 320px; 
+  width: 100%;    
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+/* Em telas maiores, a imagem ocupa 50% */
+@media (min-width: 768px) {
+  .imagem-detalhe {
+    width: 50%;
+  }
+}
+
+/* --- TEXTOS DO PRODUCT DETAIL --- */
+
+.product-info-col h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.artist-subline {
+  color: #6B7280;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #374151;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.meta-info {
+  font-size: 0.875rem;
+  color: #4B5563;
+  margin-bottom: 8px;
+}
+
+.loading-text, .error-text {
   text-align: center;
+  margin-top: 2rem;
+}
+.error-text {
+  color: red;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+/* --- ESTILOS DO PRODUCT CARD --- */
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Garante que a imagem não "vaze" para fora das bordas arredondadas */
+  
+  /* 💡 1. Adiciona a transição suave */
+  /* Isso fará com que qualquer mudança (como o 'transform') dure 0.2 segundos */
+  transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 💡 2. O efeito de 'scale' ao passar o mouse */
+.product-card:hover {
+  /* Aumenta o card em 5% */
+  transform: scale(1.08); 
+  
+  /* Opcional: Aumenta a sombra para dar um efeito de "elevação" */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+/* --- (O resto dos seus estilos .product-info, .artist, etc.) --- */

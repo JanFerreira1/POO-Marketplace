@@ -9,43 +9,59 @@ function useQuery() {
 }
 
 export default function Home() {
-  const [allProducts, setAllProducts] = useState([])
-  const [products, setProducts] = useState([])
+  const [allProducts, setAllProducts] = useState([]) // Lista mestra
+  const [products, setProducts] = useState([])       // Lista filtrada (exibida)
   const [loading, setLoading] = useState(true)
+  
+  // 💡 1. LÊ OS FILTROS DA URL (enviados pelo Header)
   const q = useQuery().get('q') || ''
+  const category = useQuery().get('category') || '' 
 
+  // Efeito 1: Busca todos os produtos (só uma vez)
   useEffect(() => {
     setLoading(true)
     fetch(API)
       .then(res => res.json())
       .then(data => {
         setAllProducts(data)
-        // aplicar filtro inicial se houver query
-        if (q) {
-          const filtered = filterProducts(data, q)
-          setProducts(filtered)
-        } else {
-          setProducts(data)
-        }
+        // A lista de 'products' será definida no Efeito 2
       })
       .catch(err => {
         console.error('Erro carregando produtos:', err)
         setAllProducts([])
-        setProducts([])
       })
       .finally(() => setLoading(false))
-  }, []) // roda só uma vez, ao montar
+  }, []) // Roda só uma vez, ao montar
 
-  // atualiza quando muda 'q' ou allProducts
+  // 💡 2. APLICA OS FILTROS DA URL
+  // Roda sempre que 'q', 'category' ou a lista mestra mudarem
   useEffect(() => {
-    if (!q) { setProducts(allProducts); return }
-    setProducts(filterProducts(allProducts, q))
-  }, [q, allProducts])
+    let filteredList = [...allProducts]
+
+    // Passo A: Filtrar por Categoria (se o parâmetro 'category' existir)
+    if (category) {
+      filteredList = filteredList.filter(p => 
+        p.category && p.category.toLowerCase() === category.toLowerCase()
+      )
+    }
+
+    // Passo B: Filtrar pela pesquisa 'q' (sobre a lista já filtrada)
+    if (q) {
+      filteredList = filterProducts(filteredList, q)
+    }
+
+    setProducts(filteredList) // Atualiza os produtos exibidos
+
+  }, [q, category, allProducts]) // Depende dos filtros da URL e da lista
 
   return (
     <div>
-      <h1>Vitrolas e Discos</h1>
+       {/*<h1>Produtos</h1>*/}
+
+      {/* 💡 3. SEM DROPDOWN AQUI! Apenas exibe os filtros ativos */}
       {q && <p>Resultados para: <strong>{q}</strong></p>}
+      {category && <p>Categoria: <strong>{category}</strong></p>}
+
       {loading ? <p>Carregando...</p> :
         products.length === 0 ? <p>Nenhum produto encontrado.</p> :
         <div className="grid">
@@ -56,6 +72,7 @@ export default function Home() {
   )
 }
 
+// Sua função de filtro 'q' (Não precisa mudar)
 function filterProducts(list, q) {
   const lower = q.toLowerCase()
   return list.filter(p => {
