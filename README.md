@@ -55,6 +55,18 @@ RePlayce é um marketplace acadêmico criado no projeto de POO, voltado para ent
 
 ---
 
+# Entrega 3
+## 🎥 Screencast 
+
+
+## 🪲 Print bug/issue tracker
+
+
+## 🤖 Testes automatizados
+
+
+---
+
 ## 🗓️ **Etapas do Projeto**
 
 **Kickoff (26/08 a 29/08):** definição da ideia, equipe e repositório  
