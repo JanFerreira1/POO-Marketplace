@@ -45,21 +45,20 @@ RePlayce é um marketplace acadêmico criado no projeto de POO, voltado para ent
 ## 🎥 Screencast entrega 1
 - [https://youtu.be/emA6fT1Qu-U](https://youtu.be/emA6fT1Qu-U?si=OPym2KeO_mV-7x0P)
 
-## **Entrega 2**
-## Print bug/issue tracker
+---
 
-<img width="1634" height="314" alt="issue enhancement" src="https://github.com/user-attachments/assets/978c6ff3-8e30-405b-aca5-6603070a3760" />
-
-<img width="1889" height="428" alt="issue closed" src="https://github.com/user-attachments/assets/9836e31f-d17f-45b9-a4ec-c4b84cd76dd9" />
-
-
-## 🎥 Screencast entrega 2 
+## 🎥 Screencast / Entrega 2 
 https://www.youtube.com/watch?v=bmpB8KRJCHE
 
+## Print bug/issue tracker / Entrega 2
+<img width="1634" height="314" alt="issue enhancement" src="https://github.com/user-attachments/assets/978c6ff3-8e30-405b-aca5-6603070a3760" />
+<img width="1889" height="428" alt="issue closed" src="https://github.com/user-attachments/assets/9836e31f-d17f-45b9-a4ec-c4b84cd76dd9" />
 
 ---
 
-## 📅 Etapas do Projeto  
-- **Kickoff (26/08 a 29/08):** definição da ideia, equipe e repositório  
-- **Entrega 01 (09/09):** histórias de usuário, protótipo Lo-Fi e screencast
-- **Entrega 02 (30/09):** Ao menos 2 histórias implementadas e seu Screencast, Issue/bug tracker atualizado e commits frequentes
+## 🗓️ Etapas do Projeto
+
+Kickoff (26/08 a 29/08): definição da ideia, equipe e repositório
+Entrega 01 (09/09): histórias de usuário, protótipo Lo-Fi e screencast
+Entrega 02 (30/09): 2 histórias implementadas e seu screencast, issue/bug tracker atualizado
+Entrega 03 (23/10): 2 novas histórias implementadas, refatoração, testes automatizados e screencast, issue/bug tracker atualizado
