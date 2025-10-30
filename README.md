@@ -30,27 +30,25 @@ RePlayce é um marketplace acadêmico criado no projeto de POO, voltado para ent
   
 ---
 
+# Entrega 1
+
 ## 📖 Histórias de Usuário
 - https://docs.google.com/document/d/1A_EGGrFaKnTY2AhksK1i-sNwver_hHrx7KRK2MCcN44/edit?usp=sharing
-  
-- https://codingthefuture.atlassian.net/jira/software/projects/REP/boards/34?atlOrigin=eyJpIjoiM2M1MmQ4NjllYjk3NDRhY2FlMjVhNjc4ZTM2MjU3NDIiLCJwIjoiaiJ9
-  
----
 
 ## 🖼 Protótipo Lo-Fi  
 - https://www.figma.com/proto/P5g2d7nrqH8aSpSbrkW5IJ/Wireframe?node-id=1-2&t=n5UcUr9YYCP6OGC1-1
 
----
-
-## 🎥 Screencast entrega 1
+## 🎥 Screencast 
 - [https://youtu.be/emA6fT1Qu-U](https://youtu.be/emA6fT1Qu-U?si=OPym2KeO_mV-7x0P)
 
 ---
 
-## 🎥 Screencast / Entrega 2 
+# Entrega 2 
+
+## 🎥 Screencast 
 - https://www.youtube.com/watch?v=bmpB8KRJCHE
 
-## Print bug/issue tracker / Entrega 2
+## 🪲 Print bug/issue tracker
 <img width="1634" height="314" alt="issue enhancement" src="https://github.com/user-attachments/assets/978c6ff3-8e30-405b-aca5-6603070a3760" />
 
 <img width="1889" height="428" alt="issue closed" src="https://github.com/user-attachments/assets/9836e31f-d17f-45b9-a4ec-c4b84cd76dd9" />
