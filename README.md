@@ -35,6 +35,8 @@ RePlayce é um marketplace acadêmico criado no projeto de POO, voltado para ent
 ## 📖 Histórias de Usuário
 - https://docs.google.com/document/d/1A_EGGrFaKnTY2AhksK1i-sNwver_hHrx7KRK2MCcN44/edit?usp=sharing
 
+- https://codingthefuture.atlassian.net/jira/software/projects/REP/boards/34
+
 ## 🖼 Protótipo Lo-Fi  
 - [https://www.figma.com/proto/P5g2d7nrqH8aSpSbrkW5IJ/Wireframe?node-id=1-2&t=n5UcUr9YYCP6OGC1-1](https://www.figma.com/design/P5g2d7nrqH8aSpSbrkW5IJ/Wireframe?node-id=0-1&t=SHbAJxGaMqE857nc-1)
 
