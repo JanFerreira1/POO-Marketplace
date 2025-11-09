@@ -68,11 +68,27 @@ RePlayce é um marketplace acadêmico criado no projeto de POO, voltado para ent
 - https://www.youtube.com/watch?v=XstOFRRUg1c
   
 ---
+---
 
+# Entrega 4
+## 🎥 Screencast 
+- 
+
+## 🪲 Print bug/issue tracker
+
+
+## 🤖 Testes automatizados
+
+
+## 📌 Documentação - Como montar o projeto
+https://docs.google.com/document/d/1CDjeKttwdlSHI8s0pmOiLrUAtSWhy1upI8L0SNff2M0/edit?usp=sharing
+
+---
 ## 🗓️ **Etapas do Projeto**
 
 **Kickoff (26/08 a 29/08):** definição da ideia, equipe e repositório  
 **Entrega 01 (09/09):** histórias de usuário, protótipo Lo-Fi e screencast  
 **Entrega 02 (30/09):** 2 histórias implementadas e seu screencast, issue/bug tracker atualizado  
-**Entrega 03 (23/10):** 2 novas histórias implementadas, refatoração, testes automatizados e screencast, issue/bug tracker atualizado  
+**Entrega 03 (23/10):** 2 novas histórias implementadas, refatoração, testes automatizados e screencast, issue/bug tracker atualizado
+**Entrega 04 (17/11):** 3 novas histórias implementadas, refatoração, testes e screencasts, issue/bug tracker atualizado, tutorial documentado
 
