@@ -1,9 +1,0 @@
-2025-11-12 22:16:25.219648-03:00 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCT" not found; SQL statement:
-SELECT * FROM PRODUCT [42102-232]
-2025-11-12 22:16:43.936842-03:00 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCT" not found; SQL statement:
-SELECT * FROM PRODUCT [42102-232]
-2025-11-12 22:24:03.853077-03:00 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUTS" not found; SQL statement:
-INSERT INTO PRODUTS (NAME, INFORMATION_SCHEMA.CHECK_CONSTRAINTS ) [42102-232]
