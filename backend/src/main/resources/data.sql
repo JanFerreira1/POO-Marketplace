@@ -1,27 +1,13 @@
--- Este script será executado automaticamente pelo Spring Boot
--- para popular o banco de dados com os produtos da pasta /frontend/public/img
+-- Este script será executado automaticamente pelo Spring Boot. Para popular o banco de dados com os produtos da pasta /frontend/public/img
 
-
---teste
-/*INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
-VALUES (
-    'TESTE (Frutificar)', 
-    'Teste', 
-    2025, 
-    100.00, 
-    '/img/teste.jpg', 
-    'disco', 
-    'Um clássico da MPB, "Frutificar" é o quarto álbum de estúdio do cantor e compositor brasileiro Djavan, lançado em 1982.', 
-    'Usado (VG+)'
-);
-
+/*
 nomeclatura para os produtos: 
 nº-nome-disco.jpg -> para incluir os discos
 nº-nome-acessorio.jpg -> para incluir os acessórios
 localização das imagens: /frontend/public/img/ -> /img/ no banco de dados
 */
 
--- Discos MPB
+-- PARA INCLUIR OS DISCOS - MPB
 --001
 INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
 VALUES (
@@ -38,17 +24,17 @@ VALUES (
 --002
 INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
 VALUES (
-    '??', 
-    '??', 
+    'Clube da Esquina', 
+    'Milton Nascimento e Lô Borges', 
     1978, 
     200.00, 
     '/img/002-clube-disco.jpg',
     'disco', 
-    '????.', 
+    'Álbum emblemático da música brasileira, reunindo talentos e influências do rock, jazz e música regional.', 
     'Usado (NM)'
 );
 
--- Discos de Rock
+-- PARA INCLUIR OS DISCOS - Rock
 --003
 INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
 VALUES (
@@ -56,7 +42,7 @@ VALUES (
     'Nirvana', 
     1991, 
     350.00, 
-    '/img/003-nevermind-disco.png', 
+    '/img/003-nevermind-disco.jpg', 
     'disco', 
     'O álbum que definiu o grunge e mudou a história do rock. Inclui o hit "Smells Like Teen Spirit".', 
     'Novo (Lacrado)'
@@ -86,7 +72,7 @@ VALUES (
     'Usado (VG+)'
 );
 
--- Discos de Pop e Eletrônico
+-- PARA INCLUIR OS DISCOS - Pop e Eletrônico
 --006
 INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
 VALUES (
@@ -111,8 +97,9 @@ VALUES (
     'Segundo álbum de estúdio da dupla francesa, definindo a french house com hits como "One More Time".', 
     'Usado (NM)'
 );
+
+-- PARA INCLUIR OS DISCOS - Música Clássica
 --008
--- Discos de Música Clássica
 INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
 VALUES (
     'Tchaikovsky: O Lago dos Cisnes', 
@@ -137,7 +124,7 @@ VALUES (
     'Usado (VG+)'
 );
 
--- NOVOS PRODUTOS: Acessórios
+-- -- PARA INCLUIR ACESSÓRIOS
 --001
 INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
 VALUES (
@@ -193,7 +180,7 @@ VALUES (
     'RePlayce Essentials', 
     2024, 
     65.00, 
-    '/img/acessorios/plastico.png', --alterar imagem
+    '/img/acessorios/plastico.jpg', --alterar imagem
     'acessorio', 
     'Proteja seus LPs contra arranhões e poeira com plásticos internos de alta qualidade.', 
     'Novo'
@@ -205,7 +192,7 @@ VALUES (
     'Turntable Lab', 
     2024, 
     119.90, 
-    '/img/acessorios/slipmat.png', --alterar imagem
+    '/img/acessorios/slipmat.jpg', --alterar imagem
     'acessorio', 
     'Melhora a aderência do disco e reduz a vibração e a estática. Feito de cortiça e borracha.', 
     'Novo'
