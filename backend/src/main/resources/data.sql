@@ -123,15 +123,51 @@ VALUES (
     'Interpretação vibrante da obra-prima de Vivaldi por uma das orquestras de câmara mais renomadas.', 
     'Usado (VG+)'
 );
+--010
+INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
+VALUES (
+    'Abbey Road', 
+    'The Beatles', 
+    1969, 
+    99.00, 
+    '/img/010-abbeyroad-disco.jpg', 
+    'disco', 
+    'Álbum icônico dos Beatles, conhecido por sua capa e por clássicos como "Come Together" e "Here Comes the Sun".', 
+    'Usado (VG+)'
+);
+--011
+INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
+VALUES (
+    'Thriller', 
+    'Michael Jackson', 
+    1982, 
+    199.99, 
+    '/img/011-thriller-disco.jpg', 
+    'disco', 
+    'É um álbum icônico que misturas gêneros como pop, rock, funk, pós-disco e R&B. Ganhou oito prêmios Grammy em 1984, incluindo o de Álbum do Ano, e é considerado o álbum mais vendido de todos os tempos.', 
+    'Usado (VG+)'
+);
+--012
+INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
+VALUES (
+    'Elis & Tom', 
+    'Elis Regina & Tom Jobim', 
+    1974, 
+    245.00, 
+    '/img/012-elisettom-disco.jpg', 
+    'disco', 
+    'é um álbum clássico da MPB, gravado em 1974, que reúne a cantora Elis Regina e o compositor Tom Jobim. Ele foi gravado nos Estados Unidos e é considerado um dos maiores discos brasileiros, com sucessos como "Águas de Março", "Só Tinha De Ser Com Você" e "Soneto de Separação".', 
+    'Usado (VG+)'
+);
 
--- -- PARA INCLUIR ACESSÓRIOS
+-- PARA INCLUIR ACESSÓRIOS
 --001
 INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
 VALUES (
     'Agulha de Reposição ATN95E', 
     'Audio-Technica', 
     2024, 
-    319.90, 
+    352.90, 
     '/img/001-agulha-acessorio.png', 
     'acessorio', 
     'Agulha de diamante elíptica de reposição, compatível com cápsulas AT95E e similares.', 
@@ -168,7 +204,7 @@ VALUES (
     'RePlayce Essentials', 
     2024, 
     75.00, 
-    '/img/004-nivel-acessorio.webp', --alterar imagem
+    '/img/004-nivel-acessorio.webp',
     'acessorio', 
     'Garanta que seu toca-discos esteja perfeitamente nivelado para a melhor performance de áudio.', 
     'Novo'
@@ -177,10 +213,10 @@ VALUES (
 INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
 VALUES (
     'Kit 50 Plásticos Internos Antiestáticos', 
-    'RePlayce Essentials', 
-    2024, 
+    'RePlayce', 
+    2025, 
     65.00, 
-    '/img/acessorios/plastico.jpg', --alterar imagem
+    '/img/005-plastico-acessorio.jpg',
     'acessorio', 
     'Proteja seus LPs contra arranhões e poeira com plásticos internos de alta qualidade.', 
     'Novo'
@@ -192,8 +228,21 @@ VALUES (
     'Turntable Lab', 
     2024, 
     119.90, 
-    '/img/acessorios/slipmat.jpg', --alterar imagem
+    '/img/006-cortica-acessorio.jpg',
     'acessorio', 
     'Melhora a aderência do disco e reduz a vibração e a estática. Feito de cortiça e borracha.', 
+    'Novo'
+);
+
+-- PARA INCLUIR VITROLAS
+INSERT INTO PRODUCTS (TITLE, ARTIST, YEAR_RELEASE, PRICE, IMAGE_URL, CATEGORY, DESCRIPTION, CONDITION_STATE) 
+VALUES (
+    'Vitrola Clássica Bluetooth AT-LP60XBT', 
+    'Audio-Technica', 
+    2024, 
+    1569.99, 
+    '/img/001-technica-vitrola.jpg', 
+    'vitrola', 
+    'Toca-discos moderno com conexão Bluetooth, pré-amplificador embutido e agulha de diamante.Experimente o áudio de alta fidelidade do vinil - Operação totalmente automatizada do toca-discos com acionamento por correia com duas velocidades: 33-1/ 3, 45 RPM, antirressonância, prato de alumínio fundido, base de braço e cabeceira redesenhada para melhor rastreamento e redução de ressonância, cartucho fonográfico integral dual magnet com ponta de mante substituível (atn3600l), pré-amplificador phono selecionável incorporado para saída em nível de linha ou fono.', 
     'Novo'
 );
