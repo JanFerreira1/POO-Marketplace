@@ -80,7 +80,54 @@ RePlayce é um marketplace acadêmico criado no projeto de POO, voltado para ent
 -
 
 ## 📌 Documentação - Como montar o projeto
-- https://docs.google.com/document/d/1CDjeKttwdlSHI8s0pmOiLrUAtSWhy1upI8L0SNff2M0/edit?usp=sharing
+
+**Pré-requisitos**
+
+**Java:** JDK 17+ ou 21 recomendado (variantes OpenJDK/Temurin).
+**Maven wrapper:** já incluso no projeto (mvnw / mvnw.cmd) — não precisa Maven global.
+**Node.js / npm:** Node 18+ recomendado.
+**Git:** para clonar o repositório (opcional se já estiver local).
+
+**Obter o código**
+Clonar: git clone https://github.com/JanFerreira1/POO-Marketplace.git
+
+**Configurar e rodar o backend (Spring Boot)**
+
+Vá para a pasta do backend:
+cd \POO-Marketplace\backend
+
+Build (opcional, compila e executa testes):
+.\mvnw clean package
+
+Rodar em modo desenvolvimento:
+.\mvnw spring-boot:run
+
+Observações:
+O backend roda na porta 8080 por padrão (configurado em application.properties).
+O banco é H2 persistente em arquivo: jdbc:h2:file:./data/replayce-db. O arquivo físico fica em replayce-db.mv.db.
+Para resetar a base, pare a aplicação e remova a pasta data.
+
+Acessar o console H2
+
+Abra no navegador: http://localhost:8080/h2-console
+JDBC URL (padrão do projeto): jdbc:h2:file:./data/replayce-db
+Usuário: sa
+Senha: (em branco)
+
+**Configurar e rodar o frontend (Vite + React)**
+
+Vá para a pasta do frontend:
+cd \POO-Marketplace\frontend
+
+Instalar dependências (apenas da primeira vez):
+npm install
+
+Rodar em modo dev:
+npm run dev
+
+Observação:
+O Vite normalmente abre em http://localhost:5173.
+
 
 ---
 ## 🗓️ **Etapas do Projeto**
