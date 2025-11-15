@@ -168,7 +168,7 @@ VALUES (
     'Audio-Technica', 
     2024, 
     352.90, 
-    '/img/001-agulha-acessorio.jpg', 
+    '/img/001-agulha-acessorio', 
     'acessorio', 
     'Agulha de diamante elíptica de reposição, compatível com cápsulas AT95E e similares.', 
     'Novo'
