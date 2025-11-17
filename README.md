@@ -82,7 +82,7 @@ RePlayce é um marketplace acadêmico criado no projeto de POO, voltado para ent
 
 ## 🎥 Screencast
 
--
+- https://www.youtube.com/watch?v=p17qVSruH7E
 
 ## 🪲 Print bug/issue tracker
 
