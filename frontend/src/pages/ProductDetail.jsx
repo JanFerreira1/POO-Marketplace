@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:8080/api/products";
+const API =
+  import.meta.env.VITE_API_URL || "http://localhost:8080/api/products";
+const CART_API = import.meta.env.VITE_API_URL || "http://localhost:8080/api";
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -11,7 +13,7 @@ export default function ProductDetail() {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`${API}/${id}`) 
+    fetch(`${API}/${id}`)
       .then((res) => {
         if (res.ok) return res.json();
         throw new Error("not-found");
@@ -25,73 +27,90 @@ export default function ProductDetail() {
   }, [id]);
 
   // --- 💡 NOVA LÓGICA DE CORREÇÃO DA IMAGEM ---
-  let imagePath = product?.imageUrl; 
+  let imagePath = product?.imageUrl;
 
   // Se o caminho existir, NÃO começar com 'http' E NÃO começar com '/'
-  if (imagePath && !imagePath.startsWith('http') && !imagePath.startsWith('/')) {
-    
+  if (
+    imagePath &&
+    !imagePath.startsWith("http") &&
+    !imagePath.startsWith("/")
+  ) {
     // Se começar com './' (ex: ./img/elis.jpg), remove o './'
-    if (imagePath.startsWith('./')) {
+    if (imagePath.startsWith("./")) {
       imagePath = imagePath.substring(2); // vira 'img/elis.jpg'
     }
-    
+
     // Adiciona a barra '/' no início
     imagePath = `/${imagePath}`; // vira '/img/elis.jpg'
   }
   // --- Fim da Lógica de Correção ---
 
-  if (loading)
-    return <p className="loading-text">Carregando...</p>;
-  if (!product)
-    return <p className="error-text">Produto não encontrado.</p>;
+  if (loading) return <p className="loading-text">Carregando...</p>;
+  if (!product) return <p className="error-text">Produto não encontrado.</p>;
 
   return (
     <div className="product-detail-container">
-      
-      <button
-        onClick={() => navigate(-1)}
-        className="btn-voltar" 
-      >
+      <button onClick={() => navigate(-1)} className="btn-voltar">
         Voltar
       </button>
 
       <div className="product-layout-box">
-        
         <img
           // 💡 CORREÇÃO APLICADA: Usa a variável 'imagePath' corrigida
           src={imagePath || "https://via.placeholder.com/400"}
           alt={product.title}
           onError={(e) => (e.target.src = "https://via.placeholder.com/400")}
-          className="imagem-detalhe" 
+          className="imagem-detalhe"
         />
 
         <div className="product-info-col">
           <h2>{product.title}</h2>
-          
+
           {/* Lógica condicional (Já estava correta) */}
           {product.artist && (
             <p className="artist-subline">
               {product.artist}
-              {product.yearRelease ? ` • ${product.yearRelease}` : ''}
-            </p> 
+              {product.yearRelease ? ` • ${product.yearRelease}` : ""}
+            </p>
           )}
 
-          <p className="price">
-            R$ {product.price?.toFixed(2)}
-          </p>
+          <p className="price">R$ {product.price?.toFixed(2)}</p>
 
           <p className="description">{product.description}</p>
 
           <p className="meta-info">
             <strong>Categoria:</strong> {product.category}
           </p>
-          
+
           <p className="meta-info">
             <strong>Condição:</strong> {product.conditionState}
           </p>
 
-          <button 
-            className="botao-detalhes" 
+          <button
+            className="botao-detalhes"
+            onClick={() => {
+              const username =
+                localStorage.getItem("username") || "guest@example.com";
+              fetch(`${CART_API}/cart/add`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username, productId: product.id }),
+              })
+                .then((res) => {
+                  if (!res.ok) throw new Error("Erro ao adicionar ao carrinho");
+                  return res.json();
+                })
+                .then(() => {
+                  // Notifica Header para atualizar contador
+                  window.dispatchEvent(new Event("cartUpdated"));
+                  // feedback simples
+                  alert("Produto adicionado ao carrinho");
+                })
+                .catch((err) => {
+                  console.error(err);
+                  alert("Não foi possível adicionar ao carrinho");
+                });
+            }}
           >
             Adicionar ao carrinho
           </button>

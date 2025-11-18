@@ -1,6 +1,0 @@
-#FileLock
-#Thu Oct 30 14:23:45 GMT-03:00 2025
-hostName=TI6202108018586.cesar-ldap.intranet
-id=19a3621735967812fde57299c73ae31b5e463a69cca
-method=file
-server=192.168.3.31\:64200
